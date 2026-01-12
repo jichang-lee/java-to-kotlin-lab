@@ -10,10 +10,7 @@ class CalculatorTest {
     fun addTest() {
         val calculator = Calculator(5)
         calculator.add(3)
-
-        val resultCalculator = Calculator(8)
-
-        if(calculator != resultCalculator) {
+        if(calculator.number != 8) {
             throw IllegalStateException()
         }
     }
